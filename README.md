@@ -1,68 +1,81 @@
-# [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/)
+# Dra. Dina Elizabeth Cortés Coss
 
-[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid, window modals for each portfolio item, and a working PHP contact form.
+### Conocimiento que inspira · Educación que transforma
 
-## Preview
+**Sitio web académico y profesional** dedicado a la investigación, la docencia, la inclusión, las conferencias y la divulgación del conocimiento.
 
-[![Freelancer Preview](https://startbootstrap.com/assets/img/screenshots/themes/freelancer.png)](https://blackrockdigital.github.io/startbootstrap-freelancer/)
+**[Explorar repositorio](https://github.com/D1N4-C055/DRA-DINA-PERSONAL-WEBPAGE)** · **[Ver sitio web](https://d1n4-c055.github.io/DRA-DINA-PERSONAL-WEBPAGE/)**
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-freelancer/)**
+*El enlace del sitio web estará disponible una vez que se active GitHub Pages.*
 
-## Status
+---
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-freelancer/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-freelancer.svg)](https://www.npmjs.com/package/startbootstrap-freelancer)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer?type=dev)
+## Acerca del proyecto
 
-## Download and Installation
+Este sitio web presenta la trayectoria y el trabajo profesional de la **Dra. Dina Elizabeth Cortés Coss**, investigadora, docente universitaria, conferenciante y promotora de la inclusión.
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/freelancer/)
-* Install via npm: `npm i startbootstrap-freelancer`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-freelancer)
+Su objetivo es conectar la investigación, la educación y el compromiso social mediante una experiencia digital moderna, elegante y accesible.
 
-## Usage
+## Características principales
 
-### Basic Usage
+- Diseño responsive adaptable a computadoras, tabletas y teléfonos.
+- Modo claro y oscuro.
+- Navegación multipágina.
+- Biografía y trayectoria académica.
+- Catálogo de proyectos.
+- Sección de conferencias con galería interactiva.
+- Premios, distinciones y publicaciones.
+- Cursos y formación.
+- Galería de fotografías.
+- Formulario de contacto mediante servicio externo.
 
-After downloading, simply edit the HTML and CSS files included with the template in a code editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+## Tecnologías utilizadas
 
-### Advanced Usage
+| Tecnología | Función |
+|---|---|
+| HTML5 | Estructura del sitio |
+| CSS3 | Diseño visual y animaciones |
+| JavaScript | Interactividad y modo oscuro |
+| Bootstrap | Componentes de interfaz |
+| Font Awesome | Iconografía |
+| GitHub Pages | Publicación de la versión estática |
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+## Secciones del sitio
 
-#### Gulp Tasks
+- **Inicio:** presentación general.
+- **Acerca de mí:** biografía de la Dra. Dina.
+- **Trayectoria:** experiencia académica y profesional.
+- **Proyectos:** iniciativas de investigación e inclusión.
+- **Conferencias:** temas, fotografías y solicitudes de charlas.
+- **Premios y distinciones:** reconocimientos.
+- **Publicaciones:** recursos y enlaces académicos.
+- **Cursos y formación:** experiencias formativas.
+- **Galería:** archivo fotográfico.
+- **Corpus lingüísticos:** presentación de la plataforma.
+- **Contacto:** canales para comunicarse.
 
-- `gulp` the default task that builds everything
-- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
+## Ejecución local
 
-You must have npm and Gulp installed globally in order to use these features.
+Clona el repositorio desde GitHub, abre la carpeta en Visual Studio Code y ejecuta un servidor HTTP local con Python.
 
-## Bugs and Issues
+Comando para Windows: `py -m http.server 8765`
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
+Abre en tu navegador: `http://localhost:8765/`
 
-## About
+## Sobre Corpus lingüísticos
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Esta publicación de GitHub contiene la **versión estática del sitio web**. El sistema de Corpus, que utiliza PHP y MySQL para autenticación y consulta de información, requiere un servidor compatible y no forma parte de la demostración pública.
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+El formulario de contacto utiliza FormSubmit y requiere activar y verificar la dirección receptora para funcionar completamente.
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+## Créditos
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+Sitio web desarrollado y adaptado para la **Dra. Dina Elizabeth Cortés Coss**.
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+El proyecto utiliza recursos de terceros, incluidos Bootstrap, Font Awesome y componentes derivados de Start Bootstrap. Las fotografías y contenidos profesionales pertenecen a sus respectivos titulares.
 
-## Copyright and License
+---
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
+**Dra. Dina Elizabeth Cortés Coss**
+
+*Conocimiento que inspira.*
