@@ -1,0 +1,158 @@
+
+:root{
+  --dc-bg:#f7f4ff;
+  --dc-paper:#ffffff;
+  --dc-violet:#6c63a8;
+  --dc-violet-deep:#40306f;
+  --dc-lilac:#ebe6fb;
+  --dc-turq:#4db6ac;
+  --dc-coral:#f28c8c;
+  --dc-ink:#243b53;
+  --dc-muted:#5d6677;
+  --dc-line:rgba(64,48,111,.12);
+  --dc-shadow:0 24px 70px rgba(44,34,84,.10);
+  --dc-shadow-lg:0 36px 90px rgba(44,34,84,.16);
+}
+
+/* ---------- Cursos premium ---------- */
+.dina-learning-page{background:radial-gradient(circle at top left,rgba(108,99,168,.18),transparent 28%),radial-gradient(circle at top right,rgba(77,182,172,.14),transparent 26%),linear-gradient(180deg,#f8f6ff 0%,#fffaf7 45%,#ffffff 100%);} 
+.dina-learning-hero{padding:2rem 0 1rem;}
+.dina-learning-shell{width:min(1180px,calc(100% - 2rem));margin:0 auto;}
+.dina-learning-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:1.6rem;align-items:stretch;}
+.dina-hero-panel,.dina-hero-aside,.dina-section-panel,.dina-corpus-panel,.dina-auth-panel,.dina-auth-side{background:rgba(255,255,255,.78);backdrop-filter:blur(16px);border:1px solid var(--dc-line);box-shadow:var(--dc-shadow);border-radius:32px;}
+.dina-hero-panel{position:relative;overflow:hidden;padding:3rem;min-height:440px;display:flex;flex-direction:column;justify-content:space-between;}
+.dina-hero-panel:before{content:"";position:absolute;inset:auto -60px -100px auto;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(242,140,140,.26),transparent 66%);} 
+.dina-hero-kicker,.dina-corpus-kicker,.dina-auth-kicker{display:inline-flex;align-items:center;gap:.55rem;background:rgba(108,99,168,.08);color:var(--dc-violet-deep);font-weight:800;letter-spacing:.16em;text-transform:uppercase;border-radius:999px;padding:.68rem 1rem;font-size:.75rem;}
+.dina-hero-panel h2,.dina-corpus-panel h2{font-family:'Cormorant Garamond',serif;font-size:4rem;line-height:.95;color:var(--dc-violet-deep);margin:1rem 0 1.25rem;max-width:700px;}
+.dina-hero-panel p,.dina-corpus-panel p,.dina-auth-copy p{font-size:1.06rem;line-height:1.8;color:var(--dc-muted);max-width:720px;}
+.dina-hero-actions,.dina-corpus-actions-premium{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.7rem;}
+.dina-chip-btn,.dina-solid-btn,.dina-ghost-btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:1rem 1.4rem;border-radius:999px;font-weight:800;text-decoration:none;transition:transform .28s ease,box-shadow .28s ease,background .28s ease,border-color .28s ease;}
+.dina-solid-btn{background:linear-gradient(135deg,var(--dc-violet),#8378cc);color:#fff;box-shadow:0 18px 40px rgba(108,99,168,.24);} 
+.dina-solid-btn:hover{color:#fff;transform:translateY(-2px);box-shadow:0 26px 46px rgba(108,99,168,.28);} 
+.dina-ghost-btn{background:#fff;color:var(--dc-violet-deep);border:1px solid var(--dc-line);} 
+.dina-ghost-btn:hover{color:var(--dc-violet-deep);transform:translateY(-2px);box-shadow:0 20px 36px rgba(44,34,84,.10);} 
+.dina-chip-btn{background:rgba(255,255,255,.78);color:var(--dc-violet-deep);border:1px solid rgba(108,99,168,.18);} 
+.dina-hero-pills{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.7rem;}
+.dina-hero-pills span{display:inline-flex;align-items:center;gap:.55rem;border-radius:999px;padding:.76rem 1rem;background:rgba(255,255,255,.8);color:var(--dc-violet-deep);border:1px solid rgba(108,99,168,.15);font-weight:700;}
+.dina-hero-aside{padding:1.65rem;display:flex;flex-direction:column;gap:1rem;}
+.dina-stat-card{padding:1.35rem 1.25rem;border-radius:24px;background:linear-gradient(180deg,#fff,#f7f3ff);border:1px solid var(--dc-line);} 
+.dina-stat-card strong{display:block;font-size:2rem;line-height:1;color:var(--dc-violet-deep);font-family:'Cormorant Garamond',serif;margin-bottom:.5rem;}
+.dina-stat-card span{display:block;color:var(--dc-muted);font-weight:600;line-height:1.6;}
+.dina-mini-spotlight{padding:1.5rem;border-radius:24px;background:linear-gradient(160deg,rgba(77,182,172,.14),rgba(255,255,255,.92));border:1px solid rgba(77,182,172,.18);} 
+.dina-mini-spotlight h3{font-size:1.2rem;color:var(--dc-ink);margin-bottom:.7rem;font-weight:800;}
+.dina-mini-spotlight p{margin:0;color:var(--dc-muted);line-height:1.7;}
+.dina-section-panel{padding:2rem;margin-top:1.6rem;}
+.dina-learning-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+.dina-learning-stats article{background:linear-gradient(180deg,#fff,#fbfaff);border:1px solid var(--dc-line);border-radius:26px;padding:1.35rem;box-shadow:0 14px 28px rgba(44,34,84,.06);} 
+.dina-learning-stats h3{font-family:'Cormorant Garamond',serif;font-size:2.1rem;margin:0;color:var(--dc-violet-deep);} 
+.dina-learning-stats p{margin:.55rem 0 0;color:var(--dc-muted);line-height:1.6;font-size:.96rem;}
+.dina-journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.15rem;margin-top:1.2rem;}
+.dina-journey-card{position:relative;padding:1.5rem;border-radius:28px;background:linear-gradient(180deg,#fff,#f8f5ff);border:1px solid var(--dc-line);overflow:hidden;}
+.dina-journey-card:before{content:"";position:absolute;inset:-30% auto auto -14%;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(108,99,168,.18),transparent 70%);} 
+.dina-journey-number{display:inline-flex;width:42px;height:42px;border-radius:50%;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--dc-violet),#8f83db);color:#fff;font-weight:800;margin-bottom:1rem;position:relative;z-index:1;}
+.dina-journey-card h4{font-size:1.12rem;font-weight:800;color:var(--dc-ink);margin-bottom:.7rem;position:relative;z-index:1;}
+.dina-journey-card p{margin:0;color:var(--dc-muted);line-height:1.75;position:relative;z-index:1;}
+#tienda{background:transparent!important;padding-top:1rem!important;}
+#tienda .filter-pill{border:1px solid rgba(108,99,168,.18);background:rgba(255,255,255,.9);color:var(--dc-violet-deep);}
+#tienda .filter-pill.active,#tienda .filter-pill:hover{background:linear-gradient(135deg,var(--dc-violet),#8579d2)!important;color:#fff!important;border-color:transparent;}
+#tienda .featured-courses-wrapper{background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border:1px solid var(--dc-line);box-shadow:var(--dc-shadow);border-radius:30px;}
+#tienda .featured-note{display:inline-flex;align-items:center;border-radius:999px;background:rgba(242,140,140,.12);color:#9a5151;padding:.65rem 1rem;font-weight:700;}
+#tienda .category-label{color:var(--dc-turq)!important;}
+#tienda .category-title{color:var(--dc-ink)!important;}
+#tienda .course-card{background:linear-gradient(180deg,#fff,#fbfaff)!important;border:1px solid var(--dc-line)!important;box-shadow:0 22px 56px rgba(44,34,84,.08)!important;border-radius:28px!important;}
+#tienda .course-card:hover{transform:translateY(-8px);box-shadow:var(--dc-shadow-lg)!important;border-color:rgba(108,99,168,.22)!important;}
+#tienda .course-card-media{background:linear-gradient(135deg,#f1edff,#e8fbf8)!important;color:var(--dc-violet)!important;min-height:140px;position:relative;overflow:hidden;}
+#tienda .course-card-media:after{content:"";position:absolute;inset:auto -35px -45px auto;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,rgba(242,140,140,.2),transparent 68%);} 
+#tienda .course-card-badge{background:#f2efff!important;color:var(--dc-violet-deep)!important;letter-spacing:.08em;}
+#tienda .course-card-title{font-size:1.1rem!important;color:var(--dc-ink)!important;min-height:calc(1.4rem*4 + .7rem);}
+#tienda .course-card-text{color:var(--dc-muted)!important;}
+#tienda .course-card-button{background:linear-gradient(135deg,var(--dc-violet),#8579d2)!important;border:none!important;box-shadow:0 16px 30px rgba(108,99,168,.18);} 
+#tienda .course-card-button:hover{background:linear-gradient(135deg,#5e5499,#7569c0)!important;color:#fff!important;} 
+.dina-learning-cta{display:grid;grid-template-columns:1fr .85fr;gap:1.2rem;margin-top:1.6rem;}
+.dina-learning-cta .dina-cta-main{padding:2rem;border-radius:30px;background:linear-gradient(135deg,var(--dc-violet-deep),#6e63a9);color:#fff;box-shadow:var(--dc-shadow-lg);} 
+.dina-learning-cta .dina-cta-main h3{font-family:'Cormorant Garamond',serif;font-size:2.5rem;line-height:1;margin-bottom:1rem;color:#fff;}
+.dina-learning-cta .dina-cta-main p{color:rgba(255,255,255,.86);margin-bottom:1.25rem;line-height:1.8;}
+.dina-learning-cta .dina-cta-side{padding:1.8rem;border-radius:30px;background:linear-gradient(160deg,rgba(77,182,172,.15),rgba(255,255,255,.95));border:1px solid rgba(77,182,172,.22);} 
+.dina-learning-cta .dina-cta-side ul{margin:0;padding-left:1.2rem;color:var(--dc-ink);} 
+.dina-learning-cta .dina-cta-side li{margin-bottom:.75rem;line-height:1.6;}
+
+/* ---------- Corpus landing ---------- */
+.dina-corpus-premium{background:radial-gradient(circle at top right,rgba(108,99,168,.16),transparent 24%),radial-gradient(circle at bottom left,rgba(77,182,172,.12),transparent 26%),linear-gradient(180deg,#f7f5ff 0%,#fbfcff 52%,#fff8f4 100%);padding-bottom:2rem;}
+.dina-corpus-shell{width:min(1180px,calc(100% - 2rem));margin:0 auto;}
+.dina-corpus-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:1.4rem;padding-top:2rem;}
+.dina-corpus-panel{padding:3rem;position:relative;overflow:hidden;}
+.dina-corpus-panel:before{content:"";position:absolute;inset:auto -80px -90px auto;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(77,182,172,.18),transparent 68%);} 
+.dina-corpus-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.7rem;}
+.dina-corpus-highlights article{border-radius:24px;padding:1.15rem;background:linear-gradient(180deg,#fff,#faf7ff);border:1px solid var(--dc-line);} 
+.dina-corpus-highlights strong{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--dc-violet-deep);line-height:1;}
+.dina-corpus-highlights span{display:block;color:var(--dc-muted);margin-top:.45rem;line-height:1.6;}
+.dina-corpus-side{display:flex;flex-direction:column;gap:1rem;}
+.dina-corpus-spot{padding:1.6rem;border-radius:28px;background:rgba(255,255,255,.82);backdrop-filter:blur(12px);border:1px solid var(--dc-line);box-shadow:var(--dc-shadow);} 
+.dina-corpus-spot h3{font-size:1.18rem;font-weight:800;color:var(--dc-ink);margin-bottom:.7rem;}
+.dina-corpus-spot p{margin:0;color:var(--dc-muted);line-height:1.7;}
+.dina-corpus-steps{margin-top:1.6rem;padding:2rem;border-radius:32px;background:rgba(255,255,255,.78);border:1px solid var(--dc-line);box-shadow:var(--dc-shadow);} 
+.dina-premium-title{font-family:'Cormorant Garamond',serif;font-size:3rem;line-height:1;color:var(--dc-violet-deep);margin-bottom:1rem;}
+.dina-section-subtitle{color:var(--dc-muted);line-height:1.8;max-width:760px;}
+.dina-step-grid,.dina-corpus-grid,.dina-corpus-techgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.2rem;}
+.dina-step-card,.dina-corpus-resource,.dina-tech-card{padding:1.45rem;border-radius:26px;background:linear-gradient(180deg,#fff,#faf8ff);border:1px solid var(--dc-line);box-shadow:0 16px 34px rgba(44,34,84,.06);} 
+.dina-step-card span,.dina-tech-card span{display:inline-flex;width:42px;height:42px;border-radius:50%;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--dc-violet),#8d81d7);color:#fff;font-weight:800;margin-bottom:1rem;}
+.dina-step-card h4,.dina-corpus-resource h4,.dina-tech-card h4{font-size:1.1rem;font-weight:800;color:var(--dc-ink);margin-bottom:.75rem;}
+.dina-step-card p,.dina-corpus-resource p,.dina-tech-card p{margin:0;color:var(--dc-muted);line-height:1.75;}
+.dina-corpus-catalog{margin-top:1.6rem;padding:2rem;border-radius:32px;background:rgba(255,255,255,.82);border:1px solid var(--dc-line);box-shadow:var(--dc-shadow);} 
+.dina-corpus-resource .resource-tag{display:inline-flex;padding:.45rem .8rem;border-radius:999px;background:#f0ecff;color:var(--dc-violet-deep);font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem;}
+.dina-corpus-resource ul{margin:.95rem 0 0;padding-left:1.1rem;color:var(--dc-ink);} 
+.dina-corpus-resource li{margin-bottom:.5rem;line-height:1.55;}
+.dina-corpus-tech{margin-top:1.6rem;padding:2rem;border-radius:32px;background:linear-gradient(135deg,#2d2453,#44346f);color:#fff;box-shadow:var(--dc-shadow-lg);} 
+.dina-corpus-tech .dina-premium-title,.dina-corpus-tech .dina-section-subtitle{color:#fff;}
+.dina-corpus-tech .dina-section-subtitle{opacity:.86;}
+.dina-corpus-techgrid .dina-tech-card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);} 
+.dina-corpus-techgrid .dina-tech-card h4,.dina-corpus-techgrid .dina-tech-card p{color:#fff;}
+.dina-corpus-techgrid .dina-tech-card p{opacity:.86;}
+.dina-corpus-notice{margin-top:1.2rem;padding:1rem 1.15rem;border-radius:18px;background:rgba(242,140,140,.12);color:#7d4444;border:1px solid rgba(242,140,140,.18);font-weight:600;}
+.dina-corpus-faq{margin-top:1.6rem;padding:2rem;border-radius:32px;background:rgba(255,255,255,.84);border:1px solid var(--dc-line);box-shadow:var(--dc-shadow);} 
+.dina-corpus-faq details{border:1px solid var(--dc-line);border-radius:22px;padding:1rem 1.1rem;background:#fff;}
+.dina-corpus-faq details+details{margin-top:.85rem;}
+.dina-corpus-faq summary{cursor:pointer;font-weight:800;color:var(--dc-ink);list-style:none;}
+.dina-corpus-faq summary::-webkit-details-marker{display:none;}
+.dina-corpus-faq p{margin:1rem 0 0;color:var(--dc-muted);line-height:1.75;}
+
+/* ---------- Login/registro premium ---------- */
+body.corpus-auth{margin:0;min-height:100vh;background:radial-gradient(circle at top left,rgba(108,99,168,.16),transparent 28%),radial-gradient(circle at bottom right,rgba(77,182,172,.16),transparent 26%),linear-gradient(180deg,#f6f3ff 0%,#fff8f2 100%);font-family:'Inter',sans-serif;color:var(--dc-ink);} 
+.body-auth-shell{width:min(1180px,calc(100% - 2rem));margin:0 auto;padding:2rem 0 3rem;}
+.dina-auth-topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.2rem;}
+.dina-auth-brand{display:flex;align-items:center;gap:1rem;text-decoration:none;color:var(--dc-violet-deep);} 
+.dina-auth-brandmark{width:60px;height:60px;border-radius:20px;background:linear-gradient(135deg,var(--dc-violet),#8a7fd7);display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:2rem;box-shadow:0 20px 38px rgba(108,99,168,.24);} 
+.dina-auth-brandtext strong{display:block;font-size:1.05rem;}
+.dina-auth-brandtext small{display:block;color:var(--dc-muted);font-size:.9rem;}
+.dina-auth-linkback{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--dc-violet-deep);font-weight:700;background:rgba(255,255,255,.7);padding:.85rem 1.1rem;border-radius:999px;border:1px solid var(--dc-line);} 
+.dina-auth-layout{display:grid;grid-template-columns:1fr .9fr;gap:1.2rem;align-items:stretch;}
+.dina-auth-side{padding:2.2rem;position:relative;overflow:hidden;}
+.dina-auth-side:after{content:"";position:absolute;inset:auto -50px -60px auto;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(242,140,140,.24),transparent 66%);} 
+.dina-auth-copy h1{font-family:'Cormorant Garamond',serif;font-size:3.6rem;line-height:.95;color:var(--dc-violet-deep);margin:1rem 0 1.1rem;}
+.dina-auth-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;margin-top:1.4rem;}
+.dina-auth-metrics article{border-radius:22px;padding:1rem;background:linear-gradient(180deg,#fff,#faf8ff);border:1px solid var(--dc-line);} 
+.dina-auth-metrics strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--dc-violet-deep);} 
+.dina-auth-metrics span{display:block;color:var(--dc-muted);line-height:1.5;font-size:.92rem;}
+.dina-auth-list{margin:1.2rem 0 0;padding-left:1.1rem;color:var(--dc-ink);} 
+.dina-auth-list li{margin-bottom:.75rem;line-height:1.6;}
+.dina-auth-panel{padding:2rem;display:flex;flex-direction:column;justify-content:center;}
+.dina-auth-panel .error{position:static;display:none;border-radius:18px;background:#ffdede;color:#8a2d2d;padding:.9rem 1rem;margin-bottom:1rem;font-weight:700;}
+.dina-auth-form{display:grid;gap:1rem;}
+.dina-field{display:grid;gap:.45rem;}
+.dina-field label{font-weight:700;color:var(--dc-ink);font-size:.96rem;}
+.dina-field input{width:100%;border-radius:18px;border:1px solid var(--dc-line);padding:1rem 1.1rem;background:#fff;color:var(--dc-ink);font-size:1rem;box-shadow:inset 0 1px 0 rgba(255,255,255,.6);} 
+.dina-field input:focus{outline:none;border-color:rgba(108,99,168,.45);box-shadow:0 0 0 4px rgba(108,99,168,.12);} 
+.dina-field-inline{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.dina-form-row{display:flex;gap:.85rem;align-items:stretch;}
+.dina-form-row .botonlog,.dina-form-row .info-btn{min-height:56px;}
+.botonlog,.dina-auth-submit,.info-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:1rem 1.2rem;border:none;border-radius:18px;font-weight:800;text-decoration:none;cursor:pointer;transition:transform .28s ease,box-shadow .28s ease;}
+.botonlog,.dina-auth-submit{background:linear-gradient(135deg,var(--dc-violet),#8579d2);color:#fff;box-shadow:0 18px 40px rgba(108,99,168,.22);} 
+.botonlog:hover,.dina-auth-submit:hover{transform:translateY(-2px);} 
+.info-btn{background:#fff;color:var(--dc-violet-deep);border:1px solid var(--dc-line);} 
+.dina-auth-help{margin-top:1rem;font-size:.96rem;color:var(--dc-muted);} 
+.dina-auth-help a{color:var(--dc-violet);font-weight:800;text-decoration:none;}
+.dina-check{display:flex;align-items:flex-start;gap:.7rem;padding:1rem;border-radius:18px;background:#faf8ff;border:1px solid var(--dc-line);} 
+.dina-check input{margin-top:.2rem;}
+.dina-auth-note{margin-top:1rem;padding:1rem 1.1rem;border-radius:18px;background:rgba(77,182,172,.12);color:#2d5d59;border:1px solid rgba(77,182,172,.15);}
+@media (max-width: 1100px){.dina-learning-grid,.dina-learning-cta,.dina-corpus-hero,.dina-auth-layout{grid-template-columns:1fr;}.dina-learning-stats,.dina-step-grid,.dina-corpus-grid,.dina-corpus-techgrid,.dina-journey-grid,.dina-auth-metrics{grid-template-columns:repeat(2,1fr);} }
+@media (max-width: 767px){.dina-hero-panel,.dina-corpus-panel,.dina-auth-side,.dina-auth-panel,.dina-section-panel,.dina-corpus-steps,.dina-corpus-catalog,.dina-corpus-tech,.dina-corpus-faq{padding:1.4rem;} .dina-hero-panel h2,.dina-corpus-panel h2,.dina-auth-copy h1{font-size:2.6rem;} .dina-learning-stats,.dina-step-grid,.dina-corpus-grid,.dina-corpus-techgrid,.dina-corpus-highlights,.dina-journey-grid,.dina-auth-metrics,.dina-field-inline{grid-template-columns:1fr;} .dina-auth-topbar{flex-direction:column;align-items:flex-start;} .dina-form-row{flex-direction:column;} }

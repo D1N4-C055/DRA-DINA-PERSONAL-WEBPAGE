@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS corpus_dina CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE corpus_dina;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  UserID INT NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(120) NOT NULL,
+  LastName VARCHAR(120) NOT NULL,
+  Email VARCHAR(180) NOT NULL,
+  User VARCHAR(80) NOT NULL,
+  Password VARCHAR(255) NOT NULL,
+  UserType ENUM('Admin','User') NOT NULL DEFAULT 'User',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (UserID),
+  UNIQUE KEY unique_user (User),
+  UNIQUE KEY unique_email (Email)
+);

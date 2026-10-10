@@ -1,0 +1,69 @@
+
+/* =====================================================
+   BIOGRAFÍA PREMIUM — Dra. Dina
+   ===================================================== */
+.dina-bio-page{position:relative}
+.dina-bio-shell{width:min(1180px,calc(100% - 2rem));margin:0 auto}
+.dina-bio-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:1.4rem;align-items:stretch}
+.dina-bio-panel,.dina-bio-side-card,.dina-bio-section-card,.dina-bio-story-card,.dina-bio-focus-card,.dina-bio-quote,.dina-bio-impact-card,.dina-bio-activism-card,.dina-bio-hobbies-card{background:rgba(255,255,255,.82);backdrop-filter:blur(14px);border:1px solid rgba(108,99,168,.14);box-shadow:0 24px 60px rgba(44,34,84,.10);border-radius:32px}
+.dina-bio-panel{padding:2.6rem;position:relative;overflow:hidden}
+.dina-bio-panel:after{content:"";position:absolute;right:-70px;bottom:-100px;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(108,99,168,.14),transparent 65%)}
+.dina-bio-kicker{display:inline-flex;align-items:center;gap:.6rem;padding:.72rem 1rem;border-radius:999px;background:rgba(108,99,168,.09);color:#53478d;font-weight:800;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.dina-bio-panel h2{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5vw,4.4rem);line-height:.94;color:#3b2b70;margin:1rem 0 1rem;max-width:760px}
+.dina-bio-panel p{font-size:1.06rem;line-height:1.85;color:#5b667b;max-width:720px;margin-bottom:0}
+.dina-bio-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.4rem}
+.dina-bio-btn,.dina-bio-btn-alt{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:1rem 1.35rem;border-radius:999px;text-decoration:none;font-weight:800;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.dina-bio-btn{background:linear-gradient(135deg,#6c63a8,#8b7fdd);color:#fff;box-shadow:0 18px 36px rgba(108,99,168,.22)}
+.dina-bio-btn:hover{color:#fff;transform:translateY(-2px)}
+.dina-bio-btn-alt{background:#fff;color:#4c4383;border:1px solid rgba(108,99,168,.18)}
+.dina-bio-btn-alt:hover{color:#4c4383;transform:translateY(-2px)}
+.dina-bio-panel .dina-bio-tags{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.35rem}
+.dina-bio-panel .dina-bio-tags span{display:inline-flex;align-items:center;gap:.55rem;padding:.75rem 1rem;border-radius:999px;background:rgba(255,255,255,.92);border:1px solid rgba(108,99,168,.15);color:#473c7d;font-weight:700}
+.dina-bio-side{display:grid;gap:1rem}
+.dina-bio-side-card{padding:1.45rem}
+.dina-bio-side-card strong{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;line-height:1;color:#45367e;margin-bottom:.6rem}
+.dina-bio-side-card span{display:block;font-size:.98rem;line-height:1.7;color:#5e687d;font-weight:600}
+.dina-bio-quote{padding:1.55rem;background:linear-gradient(160deg,rgba(77,182,172,.13),rgba(255,255,255,.96));border-color:rgba(77,182,172,.18)}
+.dina-bio-quote p{margin:0;color:#34515d;font-size:1.02rem;line-height:1.8}
+.dina-bio-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:1.4rem;margin-top:1.5rem}
+.dina-bio-story-card,.dina-bio-focus-card,.dina-bio-impact-card,.dina-bio-activism-card,.dina-bio-hobbies-card{padding:2rem}
+.dina-bio-title{font-family:'Cormorant Garamond',serif;font-size:3rem;line-height:1;color:#3f3172;margin-bottom:1rem}
+.dina-bio-subtitle{display:inline-flex;align-items:center;gap:.55rem;color:#6a61a9;font-weight:800;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.95rem}
+.dina-bio-lead{font-size:1.05rem;line-height:1.9;color:#5d677a;margin-bottom:1rem}
+.dina-bio-paragraph{font-size:1rem;line-height:1.9;color:#647084;margin-bottom:1rem}
+.dina-bio-feature-list{display:grid;gap:.9rem;margin-top:1rem}
+.dina-bio-feature{display:flex;gap:.95rem;align-items:flex-start;padding:1rem 1rem 1rem 1.05rem;border-radius:22px;background:linear-gradient(180deg,#fff,#faf8ff);border:1px solid rgba(108,99,168,.12)}
+.dina-bio-feature-icon{width:46px;height:46px;border-radius:16px;display:flex;align-items:center;justify-content:center;flex:0 0 46px;background:linear-gradient(135deg,#6c63a8,#8d82db);color:#fff;font-size:1.05rem;box-shadow:0 12px 24px rgba(108,99,168,.2)}
+.dina-bio-feature h4{font-size:1.07rem;font-weight:800;color:#2f4260;margin:0 0 .35rem}
+.dina-bio-feature p{margin:0;color:#617086;line-height:1.75;font-size:.98rem}
+.dina-bio-impact{margin-top:1.55rem}
+.dina-bio-impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.05rem}
+.dina-bio-impact-card{padding:1.55rem}
+.dina-bio-impact-card h4{font-size:1.08rem;font-weight:800;color:#334766;margin-bottom:.55rem}
+.dina-bio-impact-card p{margin:0;color:#627185;line-height:1.75;font-size:.98rem}
+.dina-bio-impact-chip{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#f3e7ff,#e4fbf6);color:#6b61ab;font-weight:800;margin-bottom:.9rem}
+.dina-bio-activism-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.85rem;margin-top:1rem}
+.dina-bio-activism-item{padding:1rem 1rem 1rem 1.05rem;border-radius:20px;background:linear-gradient(180deg,#fff,#fbf9ff);border:1px solid rgba(108,99,168,.12);color:#58667b;line-height:1.65;font-size:.95rem}
+.dina-bio-activism-item strong{display:block;color:#334865;font-size:1rem;margin-bottom:.25rem}
+.dina-bio-hobby-tags{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+.dina-bio-hobby-tags span{display:inline-flex;align-items:center;gap:.55rem;padding:.8rem 1rem;border-radius:999px;background:linear-gradient(180deg,#fff,#faf8ff);border:1px solid rgba(108,99,168,.14);font-weight:700;color:#504784}
+.dina-bio-highlight-band{margin-top:1.55rem;padding:1.4rem 1.5rem;border-radius:24px;background:linear-gradient(135deg,#3f336f,#675aa9);color:#fff;box-shadow:0 22px 50px rgba(63,51,111,.20)}
+.dina-bio-highlight-band h4{font-family:'Cormorant Garamond',serif;font-size:2rem;line-height:1;margin:0 0 .75rem;color:#fff}
+.dina-bio-highlight-band p{margin:0;color:rgba(255,255,255,.88);line-height:1.8}
+.dina-bio-section-card{padding:2rem;margin-top:1.5rem}
+.dina-bio-key-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.dina-bio-key-metrics article{padding:1.25rem;border-radius:24px;background:linear-gradient(180deg,#fff,#faf8ff);border:1px solid rgba(108,99,168,.12)}
+.dina-bio-key-metrics strong{display:block;font-family:'Cormorant Garamond',serif;font-size:2.15rem;color:#413274;line-height:1;margin-bottom:.45rem}
+.dina-bio-key-metrics span{display:block;color:#627084;line-height:1.6;font-size:.95rem}
+@media (max-width:1100px){.dina-bio-hero,.dina-bio-grid{grid-template-columns:1fr}.dina-bio-impact-grid,.dina-bio-key-metrics{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:767px){.dina-bio-panel,.dina-bio-side-card,.dina-bio-story-card,.dina-bio-focus-card,.dina-bio-impact-card,.dina-bio-activism-card,.dina-bio-hobbies-card,.dina-bio-section-card{padding:1.35rem}.dina-bio-title,.dina-bio-panel h2{font-size:2.45rem}.dina-bio-impact-grid,.dina-bio-key-metrics,.dina-bio-activism-grid{grid-template-columns:1fr}.dina-bio-actions{display:grid;grid-template-columns:1fr}.dina-bio-btn,.dina-bio-btn-alt{width:100%}}
+html[data-theme="dark"] .dina-bio-panel,html[data-theme="dark"] .dina-bio-side-card,html[data-theme="dark"] .dina-bio-section-card,html[data-theme="dark"] .dina-bio-story-card,html[data-theme="dark"] .dina-bio-focus-card,html[data-theme="dark"] .dina-bio-quote,html[data-theme="dark"] .dina-bio-impact-card,html[data-theme="dark"] .dina-bio-activism-card,html[data-theme="dark"] .dina-bio-hobbies-card,html[data-theme="dark"] .dina-bio-feature,html[data-theme="dark"] .dina-bio-activism-item,html[data-theme="dark"] .dina-bio-key-metrics article{background:#262640!important;border-color:#4d496d!important;box-shadow:0 16px 44px rgba(0,0,0,.22)!important}
+html[data-theme="dark"] .dina-bio-quote{background:linear-gradient(160deg,rgba(77,182,172,.16),rgba(41,42,66,.98))!important;border-color:#3a6e6a!important}
+html[data-theme="dark"] .dina-bio-panel h2,html[data-theme="dark"] .dina-bio-title,html[data-theme="dark"] .dina-bio-impact-card h4,html[data-theme="dark"] .dina-bio-feature h4,html[data-theme="dark"] .dina-bio-activism-item strong{color:#f3efff!important}
+html[data-theme="dark"] .dina-bio-panel p,html[data-theme="dark"] .dina-bio-lead,html[data-theme="dark"] .dina-bio-paragraph,html[data-theme="dark"] .dina-bio-feature p,html[data-theme="dark"] .dina-bio-impact-card p,html[data-theme="dark"] .dina-bio-side-card span,html[data-theme="dark"] .dina-bio-quote p,html[data-theme="dark"] .dina-bio-activism-item,html[data-theme="dark"] .dina-bio-key-metrics span{color:#c9cfe2!important}
+html[data-theme="dark"] .dina-bio-kicker,html[data-theme="dark"] .dina-bio-subtitle{color:#c8bbff!important;background:rgba(188,176,255,.10)!important}
+html[data-theme="dark"] .dina-bio-btn-alt{background:#2e2c48!important;color:#f4efff!important;border-color:#6e669a!important}
+html[data-theme="dark"] .dina-bio-btn-alt:hover{color:#fff!important;background:#3c395c!important}
+html[data-theme="dark"] .dina-bio-panel .dina-bio-tags span,html[data-theme="dark"] .dina-bio-hobby-tags span{background:#312f4e!important;border-color:#625c86!important;color:#efeaff!important}
+html[data-theme="dark"] .dina-bio-side-card strong,html[data-theme="dark"] .dina-bio-key-metrics strong{color:#d9d0ff!important}
+html[data-theme="dark"] .dina-bio-highlight-band{background:linear-gradient(135deg,#4b4181,#7063b8)!important}

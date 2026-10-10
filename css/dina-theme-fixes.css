@@ -1,0 +1,441 @@
+/* Ajustes finales — Dra. Dina · cursado, modo oscuro y móvil */
+.dina-theme-toggle{-webkit-appearance: none; -moz-appearance: none; appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;flex:0 0 auto;min-width:44px;min-height:44px;padding:9px 12px;border:1px solid rgba(108,99,168,.28);border-radius:999px;background:#f2eefc;color:#514987;cursor:pointer;font:700 11px/1.2 var(--d-font,Inter,sans-serif);transition:transform .2s,background .2s,box-shadow .2s;white-space:nowrap}
+.dina-theme-toggle:hover{background:#e9e3f9;transform:translateY(-1px);box-shadow:0 8px 25px #554d9125}
+.dina-theme-toggle:focus-visible{outline:3px solid #4db6ac;outline-offset:3px}
+.dina-theme-toggle .dina-theme-label{white-space:nowrap}
+/* Separate the training tiles. Bootstrap 4 does not support gx/gy utility classes. */
+#tienda .category-block>.row{display:flex;flex-wrap:wrap;row-gap:27px;margin-left:-12px;margin-right:-12px;align-items:stretch}
+#tienda .category-block>.row>[class*="col-"]{box-sizing:border-box;padding-left:12px;padding-right:12px;min-width:0;margin-bottom:0}
+#tienda .category-block .course-card{width:100%;min-width:0;height:100%;min-height:0;padding:1.55rem}
+#tienda .category-block .course-card-title{display:block;min-height:0;overflow:visible;white-space:normal;text-overflow:clip;-webkit-line-clamp:unset;line-height:1.35;margin-bottom:1rem}
+#tienda .category-block .course-card-text{display:block;min-height:0;overflow:visible;white-space:normal;text-overflow:clip;-webkit-line-clamp:unset;margin-bottom:1.5rem}
+#tienda .category-block+.category-block{margin-top:4rem}
+#tienda .course-card-button{margin-top:.6rem}
+/* Remove the artificial editorial intro section styling left from the abandoned design. */
+#tienda{background:transparent!important}
+#tienda .section-header{margin-inline:auto;max-width:850px}
+#tienda .featured-courses-wrapper{margin-top:1rem}
+#tienda .featured-courses-slider{gap:24px}
+.dina-contact-delivery-note{margin-top:1.5rem;color:#647087;font-size:.84rem;line-height:1.65;border-top:1px solid rgba(108,99,168,.12);padding-top:1rem}
+.dina-contact-delivery-alt{margin-top:1rem;font-size:.92rem;color:#55667e}
+.dina-contact-delivery-alt a{color:#655ba5;font-weight:700;text-decoration:underline}
+/* Responsive navbar, touch targets, and cards */
+@media(max-width:1320px){.dina-theme-toggle .dina-theme-label{display:none}}
+@media(max-width:991px){
+ .dina-nav-inner{gap:10px!important}
+ .dina-nav-inner>.dina-theme-toggle{margin-left:auto;order:1}
+ .dina-nav-inner>.dina-menu-toggle{order:2;flex-shrink:0}
+ .dina-nav-inner>.dina-nav-collapse{order:3}
+ .dina-theme-toggle{min-width:44px;width:44px;padding:0}
+ .dina-nav-link,.dina-more-btn,.dina-more-menu a{min-height:44px}
+}
+@media(max-width:767px){
+ #tienda .category-block>.row{row-gap:22px;margin-inline:-8px}
+ #tienda .category-block>.row>[class*="col-"]{padding-inline:8px}
+ #tienda .category-block .course-card{padding:1.4rem}
+ #tienda .featured-courses-slider{grid-template-columns:minmax(0,1fr)!important;gap:20px}
+ #tienda .featured-courses-wrapper{padding:1.35rem!important}
+ #tienda .featured-courses-heading{gap:12px}
+ .dina-inner-intro h1{overflow-wrap:break-word}
+ .contact-grid{grid-template-columns:1fr!important}
+ .contact-form-card,.contact-info-card{min-width:0}
+ .dina-content-section .container{max-width:100%}
+}
+@media(max-width:430px){.dina-nav-inner{padding-inline:12px!important}.dina-brand-text small{font-size:12px}.dina-brand-text strong{font-size:11px}.dina-brand-mark{width:38px;height:38px;font-size:26px}.dina-theme-toggle{width:42px;min-width:42px;min-height:42px}.dina-menu-toggle{width:42px;height:42px}}
+/* Global dark palette */
+html[data-theme="dark"]{color-scheme:dark;--d-ink:#eaeaf6;--d-muted:#b4bed5;--d-violet:#aaa0ed;--d-violet-deep:#d3ccff;--d-cream:#141526;--d-line:rgba(210,199,255,.17);--d-shadow:0 20px 65px rgba(0,0,0,.26);--dc-violet-deep:#d5cdff;--dc-ink:#edf0fa;--dc-muted:#b8c0d7;--dc-line:rgba(210,199,255,.18);--dc-paper:#22233d;--dc-bg:#17182b}
+html[data-theme="dark"] body.dina-multipage{background:#141525!important;color:#eaeaf6!important}
+html[data-theme="dark"] .dina-background{background:radial-gradient(ellipse at 10% 20%,rgba(108,99,168,.2),transparent 52%),linear-gradient(145deg,#121322,#1b1b33)!important}
+html[data-theme="dark"] .dina-navbar,html[data-theme="dark"] .dina-nav-collapse{background:rgba(25,25,46,.97)!important;border-color:#555073!important}
+html[data-theme="dark"] .dina-brand-text strong{color:#f4f0ff!important}
+html[data-theme="dark"] .dina-brand-text small{color:#cec7ff!important}
+html[data-theme="dark"] .dina-nav-link,html[data-theme="dark"] .dina-more-btn{color:#d8d8ed!important}
+html[data-theme="dark"] .dina-nav-link:hover,html[data-theme="dark"] .dina-more-btn:hover,html[data-theme="dark"] .dina-nav-link.active{background:#39345f!important;color:#fff!important}
+html[data-theme="dark"] .dina-more-menu{background:#23243d!important;border-color:#514a75!important}
+html[data-theme="dark"] .dina-more-menu a{color:#eae9fa!important}
+html[data-theme="dark"] .dina-more-menu a:hover{background:#393559!important;color:#fff!important}
+html[data-theme="dark"] .dina-menu-toggle{color:#edeaff!important;border-color:#645c89!important}
+html[data-theme="dark"] .dina-theme-toggle{background:#363058!important;color:#f6edff!important;border-color:#786fa3!important}
+html[data-theme="dark"] .dina-theme-toggle:hover{background:#49406e!important}
+html[data-theme="dark"] .dina-hero,html[data-theme="dark"] .dina-inner-intro,html[data-theme="dark"] .dr-page-hero{background:radial-gradient(ellipse at 90% 15%,rgba(91,74,145,.30),transparent 58%),linear-gradient(125deg,#1a1b31,#24233b)!important;border-color:#494365!important}
+html[data-theme="dark"] .dina-hello,html[data-theme="dark"] .dina-section-kicker,html[data-theme="dark"] .dina-inner-eyebrow,html[data-theme="dark"] .dina-eyebrow{color:#c1b4ff!important}
+html[data-theme="dark"] .dina-breadcrumb,html[data-theme="dark"] .dina-breadcrumb a{color:#bcb8d6!important}
+html[data-theme="dark"] h1,html[data-theme="dark"] h2,html[data-theme="dark"] h3,html[data-theme="dark"] h4,html[data-theme="dark"] .dina-inner-intro h1,html[data-theme="dark"] .dr-page-hero h1{color:#f3efff!important}
+html[data-theme="dark"] .dina-hero-description,html[data-theme="dark"] .dina-heading-subtitle,html[data-theme="dark"] .dr-hero-lead,html[data-theme="dark"] .dina-content-section p,html[data-theme="dark"] .dina-inner-intro p{color:#c1c4da!important}
+html[data-theme="dark"] .dina-areas,html[data-theme="dark"] .dina-home-feature,html[data-theme="dark"] .page-section.dina-content-section,html[data-theme="dark"] #tienda,html[data-theme="dark"] .dina-corpus,html[data-theme="dark"] .dr-formation-section,html[data-theme="dark"] .dr-cert-section,html[data-theme="dark"] .dr-next-section{background:#191a2f!important}
+html[data-theme="dark"] .dina-area-card,html[data-theme="dark"] .dina-home-tile,html[data-theme="dark"] .dina-content-section .section-card,html[data-theme="dark"] #tienda .course-card,html[data-theme="dark"] #tienda .featured-courses-wrapper,html[data-theme="dark"] .dina-corpus-card,html[data-theme="dark"] .dina-content-section .contact-info-card,html[data-theme="dark"] .dina-content-section .contact-form-card,html[data-theme="dark"] .dr-study-card,html[data-theme="dark"] .dr-cert-card,html[data-theme="dark"] .dr-project-card{background:#262640!important;border-color:#4a446d!important;box-shadow:0 14px 42px rgba(0,0,0,.23)!important;color:#f0edff!important}
+html[data-theme="dark"] #tienda .course-card-media{background:linear-gradient(135deg,#3a325b,#285353)!important}
+html[data-theme="dark"] #tienda .course-card-title,html[data-theme="dark"] #tienda .category-title,html[data-theme="dark"] #tienda .course-card-text{color:#e9e9f8!important}
+html[data-theme="dark"] #tienda .filter-pill{background:#2a2945!important;border-color:#645c8b!important;color:#e9e9fa!important}
+html[data-theme="dark"] #tienda .course-card-badge{background:#433b69!important;color:#e8ddff!important}
+html[data-theme="dark"] #tienda .course-card-button{color:#fff!important;background:#7063b8!important}
+html[data-theme="dark"] .dina-contact-delivery-note,html[data-theme="dark"] .dina-contact-delivery-alt{color:#c2c6dc!important}
+html[data-theme="dark"] .dina-contact-delivery-alt a{color:#d6ccff!important}
+html[data-theme="dark"] input:not([type="checkbox"]),html[data-theme="dark"] textarea,html[data-theme="dark"] select{background:#24243d!important;color:#f2efff!important;border-color:#605981!important}
+html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder{color:#aaaac0!important}
+html[data-theme="dark"] .dina-corpus-copy h2,html[data-theme="dark"] .dina-corpus-copy p,html[data-theme="dark"] .dina-corpus-card p,html[data-theme="dark"] .dina-corpus-card h3{color:#efedff!important}
+html[data-theme="dark"] .dina-btn-outline{background:#2c2a46!important;color:#f6f1ff!important;border-color:#756c9d!important}
+html[data-theme="dark"] footer.footer,html[data-theme="dark"] .copyright{background:#10111f!important;color:#eaeaf6!important}
+html[data-theme="dark"] footer.footer h4,html[data-theme="dark"] footer.footer strong,html[data-theme="dark"] footer.footer p{color:#eeeaff!important}
+/* Trajectory/Projects special design tokens */
+html[data-theme="dark"] .dr-site{--dr-dark:#efeffa;--dr-soft:#1b1c31;--dr-muted:#bec3d8;color:#efeffa}
+html[data-theme="dark"] .dr-jump-links{background:#22233c!important;border-color:#4b486b!important}
+html[data-theme="dark"] .dr-formation-side p,html[data-theme="dark"] .dr-study-card p,html[data-theme="dark"] .dr-project-card p{color:#c5c9dc!important}
+html[data-theme="dark"] .dr-art-mini,html[data-theme="dark"] .dr-next-card{background:#2d2d4b!important;border-color:#605883!important}
+html[data-theme="dark"] .dr-art-mini small{color:#d1cce4!important}
+/* Editorial premium sections */
+html[data-theme="dark"] .de-highlights,html[data-theme="dark"] .de-awards-archive,html[data-theme="dark"] .de-platforms,html[data-theme="dark"] .de-community,html[data-theme="dark"] .de-photo-gallery{background:#1b1b31!important}
+html[data-theme="dark"] .de-feature-card,html[data-theme="dark"] .de-resource,html[data-theme="dark"] .de-award,html[data-theme="dark"] .de-social-card{background:#292942!important;border-color:#4a466e!important;color:#f5f0ff!important}
+html[data-theme="dark"] .de-feature-card p,html[data-theme="dark"] .de-resource-description,html[data-theme="dark"] .de-award h3,html[data-theme="dark"] .de-site p:not(.de-eyebrow),html[data-theme="dark"] .de-gallery-footer div{color:#dad8ed!important}
+html[data-theme="dark"] .de-archive-sidebar,html[data-theme="dark"] .de-community-note{background:#282840!important;color:#f4f1ff!important;border-color:#494466!important}
+html[data-theme="dark"] .de-photo-gallery .de-search-wrap input{background:#262640!important;color:#fff!important}
+@media(prefers-reduced-motion:reduce){.dina-theme-toggle{transition:none!important}}
+
+html[data-theme="dark"] body.corpus-auth{background:radial-gradient(circle at 10% 10%,rgba(117,93,206,.18),transparent 50%),linear-gradient(145deg,#121324,#202037)!important;color:#eeeafa!important}
+html[data-theme="dark"] .dina-auth-side,html[data-theme="dark"] .dina-auth-panel,html[data-theme="dark"] .dina-auth-metrics article,html[data-theme="dark"] .dina-check{background:#25253f!important;color:#edeaf9!important;border-color:#50486f!important}
+html[data-theme="dark"] .dina-auth-copy h1,html[data-theme="dark"] .dina-auth-panel h2,html[data-theme="dark"] .dina-field label,html[data-theme="dark"] .dina-auth-brandtext strong{color:#f2efff!important}
+html[data-theme="dark"] .dina-auth-copy p,html[data-theme="dark"] .dina-auth-list,html[data-theme="dark"] .dina-auth-help,html[data-theme="dark"] .dina-auth-metrics span{color:#cbc8dc!important}
+html[data-theme="dark"] .dina-auth-linkback{background:#2f2b4b;color:#f6edff;border-color:#5e5781}
+
+/* Consistent dark theme in additional editorial and project sections */
+html[data-theme="dark"] .de-site{--de-ink:#edeaf8;--de-navy:#ddd8ff;--de-muted:#bec3d9;--de-border:#504c6f;--de-cream:#1b1b31;color:#eae8f8}
+html[data-theme="dark"] .de-hero,html[data-theme="dark"] .de-links-hero{background:radial-gradient(ellipse at 90% 0%,rgba(85,69,148,.31),transparent 65%),linear-gradient(115deg,#1b1c33,#252341)!important;border-color:#4e4774!important}
+html[data-theme="dark"] .de-site .de-hero-desc,html[data-theme="dark"] .de-site .de-section-top>p{color:#c3c4da!important}
+html[data-theme="dark"] .de-stats-strip,html[data-theme="dark"] .de-community-note{background:#24253f!important;border-color:#514b73!important}
+html[data-theme="dark"] .de-stats-grid span,html[data-theme="dark"] .de-stats-quote{color:#ded8f6!important}
+html[data-theme="dark"] .de-filter:not(.is-active),html[data-theme="dark"] .de-search-wrap,html[data-theme="dark"] .dr-filter:not(.is-active),html[data-theme="dark"] .dr-catalog-tools,html[data-theme="dark"] .dr-search-wrap,html[data-theme="dark"] .dr-sort-wrap{background:#2b2a46!important;color:#efeafe!important;border-color:#565174!important}
+html[data-theme="dark"] .de-search-wrap input,html[data-theme="dark"] .dr-search-wrap input,html[data-theme="dark"] .dr-sort-wrap select{background:transparent!important;color:#fff!important}
+html[data-theme="dark"] .dr-catalog{background:#1b1b31!important}
+html[data-theme="dark"] .dr-project-card-body,html[data-theme="dark"] .dr-project-card-footer{background:#282841!important;color:#eeebfa!important}
+html[data-theme="dark"] .dr-project-card h3,html[data-theme="dark"] .dr-study-card h3,html[data-theme="dark"] .dr-cert-card h3{color:#f5f0ff!important}
+html[data-theme="dark"] .dr-tag-violet,html[data-theme="dark"] .dr-cat-chip{background:#3d3761!important;color:#e6ddff!important}
+html[data-theme="dark"] .dr-proj-float{background:#282744!important;color:#eae7fb!important;border-color:#615b82!important}
+html[data-theme="dark"] .dina-contact-band,html[data-theme="dark"] .dina-home-feature .dina-home-tile{border-color:#565074!important}
+
+
+/* =======================================================================
+   REVISIÓN INTEGRAL DE MODO OSCURO — legibilidad en todos los apartados.
+   Se añaden reglas al final para sobrescribir estilos claros heredados.
+   ======================================================================= */
+html[data-theme="dark"]{
+ --d-violet:#bcb0ff;
+ --d-violet-deep:#e7e0ff;
+ --d-ink:#f4f2ff;
+ --d-muted:#cbd0e2;
+ --de-violet:#bcb0ff;
+ --de-ink:#f4f2ff;
+ --de-muted:#c7cede;
+ --de-navy:#f3f0ff;
+ --dr-violet:#bcb0ff;
+ --dr-muted:#cbd0e2;
+}
+/* Always give focus-visible elements a strong outline, including on dark panels. */
+html[data-theme="dark"] a:focus-visible,html[data-theme="dark"] button:focus-visible,
+html[data-theme="dark"] input:focus-visible,html[data-theme="dark"] textarea:focus-visible,
+html[data-theme="dark"] select:focus-visible{outline:3px solid #80e3d9!important;outline-offset:3px}
+html[data-theme="dark"] .dina-hero-actions a:not(.dina-btn-primary),
+html[data-theme="dark"] .dina-btn-outline,html[data-theme="dark"] .dina-hero .dina-btn-outline{
+ color:#eeeaff!important;background:#353256!important;border-color:#706aa1!important;
+}
+html[data-theme="dark"] .dina-hero-actions a:not(.dina-btn-primary):hover{
+ color:#fff!important;background:#484273!important;
+}
+/* Trayectoria — jump nav and secondary hero CTA were using fixed gray/violet. */
+html[data-theme="dark"] .dr-jump-links a{color:#dad9f0!important}
+html[data-theme="dark"] .dr-jump-links a:hover,
+html[data-theme="dark"] .dr-jump-links a:focus-visible{color:#ffffff!important}
+html[data-theme="dark"] .dr-jump-links a span,html[data-theme="dark"] .dr-jump-links a i{color:#bdb0ff!important}
+html[data-theme="dark"] .dr-hero-actions .dr-link,
+html[data-theme="dark"] .dr-hero-actions a:not(.dr-btn),
+html[data-theme="dark"] .dr-text-link,
+html[data-theme="dark"] .dr-next-section a:not(.dr-primary-btn){color:#d6caff!important}
+html[data-theme="dark"] .dr-hero-actions a:hover{color:#ffffff!important}
+/* Proyectos — filters, search and count labels. */
+html[data-theme="dark"] .dr-catalog-tools,
+html[data-theme="dark"] .dr-filter-list{background:#292943!important;border-color:#595276!important;color:#f3efff!important}
+html[data-theme="dark"] .dr-catalog-tools .dr-filter:not(.active):not(.is-active),
+html[data-theme="dark"] .dr-catalog-tools button.dr-filter:not(.active):not(.is-active){
+ color:#f4eeff!important;background:#353252!important;border:1px solid #766e9f!important;
+}
+html[data-theme="dark"] .dr-filter.active,html[data-theme="dark"] .dr-filter.is-active,
+html[data-theme="dark"] .dr-catalog-tools button.dr-filter.active{
+ color:#ffffff!important;background:#6e5eb8!important;border-color:#9d8ceb!important;
+}
+html[data-theme="dark"] .dr-catalog-tools .dr-filter:not(.active):hover,
+html[data-theme="dark"] .dr-catalog-tools .dr-filter:not(.is-active):hover{background:#464069!important;color:#fff!important}
+html[data-theme="dark"] .dr-catalog-tools label,
+html[data-theme="dark"] .dr-catalog-tools .dr-tool-label,
+html[data-theme="dark"] .dr-catalog-tools .dr-count,
+html[data-theme="dark"] .dr-catalog-tools p,
+html[data-theme="dark"] #dr-count,
+html[data-theme="dark"] .dr-catalog-tools span{color:#dddaf1!important}
+html[data-theme="dark"] .dr-search-wrap,html[data-theme="dark"] .dr-sort-wrap{
+ background:#31304e!important;border-color:#655c89!important;color:#f4f2ff!important;
+}
+html[data-theme="dark"] #dr-search,html[data-theme="dark"] #dr-sort{
+ background:#31304e!important;color:#f5f1ff!important;border-color:#655c89!important;
+}
+html[data-theme="dark"] #dr-search::placeholder{color:#bcc2d8!important;opacity:1}
+html[data-theme="dark"] #dr-sort option{color:#f5f1ff;background:#292940}
+html[data-theme="dark"] .dr-filter i,html[data-theme="dark"] .dr-search-wrap i{color:#bcb0ff!important}
+/* Premios, websites/social, galería — editorial card headings and metadata. */
+html[data-theme="dark"] .de-site .de-eyebrow{color:#c8baff!important}
+html[data-theme="dark"] .de-site .de-eyebrow span{background:#bcb0ff!important}
+html[data-theme="dark"] .de-site .de-resource strong,
+html[data-theme="dark"] .de-site .de-social-body strong{
+ color:#f5f3ff!important;
+}
+html[data-theme="dark"] .de-site .de-resource-type,
+html[data-theme="dark"] .de-site .de-resource-bottom small,
+html[data-theme="dark"] .de-site .de-social-body small{
+ color:#d1cbe7!important;
+}
+html[data-theme="dark"] .de-site .de-resource-bottom{
+ border-color:#5a5579!important;color:#cbbaff!important;
+}
+html[data-theme="dark"] .de-site .de-resource-bottom i,
+html[data-theme="dark"] .de-site .de-social-arrow,
+html[data-theme="dark"] .de-site .de-community-note div i{color:#bcb0ff!important}
+html[data-theme="dark"] .de-site .de-resource-description,
+html[data-theme="dark"] .de-site .de-social-card p,
+html[data-theme="dark"] .de-site .de-section-top>p{color:#d6d9eb!important}
+html[data-theme="dark"] .de-site .de-social-card:hover,
+html[data-theme="dark"] .de-site .de-resource:hover{
+ background:#343451!important;border-color:#8076af!important;
+}
+html[data-theme="dark"] .de-site .de-community-note div{color:#e8e7f6!important}
+html[data-theme="dark"] .de-site .de-community-note a{color:#d7caff!important}
+html[data-theme="dark"] .de-site .de-community-note a:hover{color:#fff!important}
+html[data-theme="dark"] .de-site .de-community-note{background:#292943!important;border-color:#5a5379!important}
+html[data-theme="dark"] .de-site .de-social-card{background:#292942!important}
+/* Cursos — icon panels, badges, descriptions and controls. */
+html[data-theme="dark"] #tienda .course-card-media{
+ background:linear-gradient(135deg,#3e365f,#2b5256)!important;
+ border:1px solid #625a89!important;
+}
+html[data-theme="dark"] #tienda .course-card-media i{
+ color:#d4c2ff!important;
+ opacity:1!important;
+ text-shadow:0 2px 18px rgba(178,158,255,.18);
+}
+html[data-theme="dark"] #tienda .category-label,
+html[data-theme="dark"] #tienda .featured-note{color:#d5c7ff!important}
+html[data-theme="dark"] #tienda .featured-note{background:#3c335c!important}
+html[data-theme="dark"] #tienda .course-card-text,
+html[data-theme="dark"] #tienda .dina-heading-subtitle{color:#d6d8e8!important}
+html[data-theme="dark"] #tienda .course-card-badge{background:#453b6c!important;color:#f2eaff!important}
+html[data-theme="dark"] #tienda .filter-pill.active{color:#ffffff!important;background:#7163bc!important}
+html[data-theme="dark"] #tienda .filter-pill:not(.active){color:#f4f0ff!important;background:#302d4d!important;border-color:#736b9e!important}
+/* Contact — dark form fields, readable contact values, labels and notices. */
+html[data-theme="dark"] .contact-info-card .contact-info-item span,
+html[data-theme="dark"] .contact-info-card .contact-note,
+html[data-theme="dark"] .contact-info-card p,
+html[data-theme="dark"] .contact-form-card p,
+html[data-theme="dark"] .contact-form-card .contact-subtitle{color:#d7d9e9!important}
+html[data-theme="dark"] .contact-info-card .contact-info-item strong,
+html[data-theme="dark"] .contact-form-card .contact-form-title h3{color:#faf7ff!important}
+html[data-theme="dark"] .contact-form-card .contact-field input.form-control,
+html[data-theme="dark"] .contact-form-card .contact-field textarea.form-control{
+ background:#343653!important;
+ border:1px solid #726b9b!important;
+ color:#ffffff!important;
+ -webkit-text-fill-color:#ffffff!important;
+ box-shadow:inset 0 0 0 9999px rgba(0,0,0,0)!important;
+}
+html[data-theme="dark"] .contact-form-card .contact-field input::placeholder,
+html[data-theme="dark"] .contact-form-card .contact-field textarea::placeholder{
+ color:#d3d4e7!important;opacity:1!important;
+ -webkit-text-fill-color:#d3d4e7!important;
+}
+html[data-theme="dark"] .contact-form-card .contact-field input:focus,
+html[data-theme="dark"] .contact-form-card .contact-field textarea:focus{
+ border-color:#bdb0ff!important;box-shadow:0 0 0 3px rgba(189,176,255,.19)!important;
+}
+html[data-theme="dark"] .contact-form-card .contact-field .input-icon i{color:#bfb2ff!important}
+html[data-theme="dark"] .contact-info-card .info-icon i{color:#a99cf0!important}
+html[data-theme="dark"] .contact-info-card .contact-note{border-color:#5a5279!important}
+/* Dark surface text for smaller navigation and auxiliary components. */
+html[data-theme="dark"] .dina-corpus-note,html[data-theme="dark"] .de-site .de-breadcrumb,
+html[data-theme="dark"] .de-site .de-breadcrumb a,
+html[data-theme="dark"] .dr-site .dr-breadcrumb,
+html[data-theme="dark"] .dr-site .dr-breadcrumb a{color:#d5d2e7!important}
+html[data-theme="dark"] .dina-corpus-card a,
+html[data-theme="dark"] .dina-content-section a:not(.dina-btn):not(.btn-send){color:#d4c8ff}
+/* Dark auth surfaces and registration inputs, when run with PHP. */
+html[data-theme="dark"] body.corpus-auth .dina-field input{
+ background:#343653!important;color:#fff!important;border-color:#716990!important;
+}
+html[data-theme="dark"] body.corpus-auth .dina-field input::placeholder{color:#d1d3e7!important}
+html[data-theme="dark"] body.corpus-auth .dina-auth-brandtext small,
+html[data-theme="dark"] body.corpus-auth .dina-auth-note,
+html[data-theme="dark"] body.corpus-auth .dina-check span{color:#e1ddf3!important}
+html[data-theme="dark"] body.corpus-auth .dina-auth-note{background:#2b3a46!important}
+/* Fix any inherited mobile min-width or spacing issues. */
+@media(max-width:767px){
+ html[data-theme="dark"] .dr-jump-links .dr-container{gap:10px!important;justify-content:flex-start}
+ .de-resource-grid-featured,.de-resource-grid-secondary,.de-social-grid{grid-template-columns:minmax(0,1fr)!important}
+ .contact-grid>*{min-width:0}
+ #tienda .category-block>.row>[class*="col-"]{flex:0 0 100%;max-width:100%}
+ #tienda .category-block .course-card{width:100%;}
+}
+
+/* Final high-specificity corrections for legacy #contact and primary buttons. */
+html[data-theme="dark"] .dina-hero-actions .dina-btn-primary,
+html[data-theme="dark"] .dr-hero-actions .dina-btn-primary,
+html[data-theme="dark"] a.dina-btn.dina-btn-primary{
+ background:#6454a6!important;
+ background-image:none!important;
+ color:#ffffff!important;
+ border-color:#8f83d1!important;
+}
+html[data-theme="dark"] .dina-hero-actions .dina-btn-primary:hover,
+html[data-theme="dark"] .dr-hero-actions .dina-btn-primary:hover{
+ background:#7463bb!important;color:#fff!important;
+}
+html[data-theme="dark"] #contact .contact-form-card .contact-field input.form-control,
+html[data-theme="dark"] #contact .contact-form-card .contact-field textarea.form-control{
+ background:#343653!important;
+ background-image:none!important;
+ color:#ffffff!important;
+ -webkit-text-fill-color:#ffffff!important;
+ border:1px solid #77709b!important;
+}
+html[data-theme="dark"] #contact .contact-form-card .contact-field input::placeholder,
+html[data-theme="dark"] #contact .contact-form-card .contact-field textarea::placeholder{
+ color:#d4d8ea!important;-webkit-text-fill-color:#d4d8ea!important;opacity:1!important;
+}
+/* Finishing touches: readable decorative headlines and accessible CTAs. */
+html[data-theme="dark"] .de-site h1 em,
+html[data-theme="dark"] .de-site h2 em,
+html[data-theme="dark"] .de-site .de-text-cta,
+html[data-theme="dark"] .de-site .de-text-cta i{
+ color:#c7bbff!important;
+}
+html[data-theme="dark"] .de-site .de-text-cta:hover{color:#ffffff!important}
+html[data-theme="dark"] .dina-nav-cta,
+html[data-theme="dark"] .dina-content-section .btn-send,
+html[data-theme="dark"] #contact button.btn-send{
+ background:#6554aa!important;
+ background-image:none!important;
+ color:#ffffff!important;
+ border-color:#8172c0!important;
+}
+html[data-theme="dark"] #contact button.btn-send:hover{background:#7967c3!important;color:#fff!important}
+html[data-theme="dark"] .dina-inner-intro em,
+html[data-theme="dark"] .dr-site .dr-hero em{color:#c7bbff!important}
+/* Icons on pale inset badges need dark violet, not pastel violet. */
+html[data-theme="dark"] .contact-info-card .info-icon i,
+html[data-theme="dark"] .contact-info-card .icon-badge i,
+html[data-theme="dark"] .contact-form-card .contact-form-title-icon i{
+ color:#594b9e!important;
+}
+html[data-theme="dark"] footer.footer .btn-social i,
+html[data-theme="dark"] footer.footer .btn-social svg,
+html[data-theme="dark"] footer.footer .btn-social svg path{
+ color:#d8d0ff!important;fill:currentColor!important;
+}
+
+/* ============================================================
+   AJUSTES FINALES DE CONTRASTE — DRA. DINA
+   Correcciones seguras para modo claro y oscuro.
+   ============================================================ */
+
+/* BIOGRAFÍA: fondo violeta -> titulares siempre blancos.
+   Regla específica: evita heredar el color oscuro general de h4. */
+#biografia .dina-bio-highlight-band h4,
+#biografia .dina-bio-highlight-band h4.bio-subtitle {
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(22, 16, 48, 0.16);
+}
+
+#biografia .dina-bio-highlight-band p,
+#biografia .dina-bio-highlight-band li,
+#biografia .dina-bio-highlight-band span:not(.dina-bio-highlight-icon) {
+  color: #f6f1ff !important;
+}
+
+#biografia .dina-bio-highlight-band {
+  background: linear-gradient(135deg, #453773 0%, #6757a7 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+html[data-theme="dark"] #biografia .dina-bio-highlight-band {
+  background: linear-gradient(135deg, #473778 0%, #6654a6 100%) !important;
+  border-color: rgba(219, 209, 255, 0.22) !important;
+}
+
+html[data-theme="dark"] #biografia .dina-bio-highlight-band h4,
+html[data-theme="dark"] #biografia .dina-bio-highlight-band h4.bio-subtitle {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] #biografia .dina-bio-highlight-band p,
+html[data-theme="dark"] #biografia .dina-bio-highlight-band li,
+html[data-theme="dark"] #biografia .dina-bio-highlight-band span:not(.dina-bio-highlight-icon) {
+  color: #f6f1ff !important;
+}
+
+/* INICIO: etiqueta flotante encima de la foto, modo oscuro. */
+html[data-theme="dark"] .dina-float-note {
+  background: rgba(38, 37, 65, 0.97) !important;
+  color: #f1eeff !important;
+  border: 1px solid #756ca1 !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .dina-float-note strong {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .dina-float-icon {
+  background: #4a406c !important;
+  color: #e3d5ff !important;
+}
+
+html[data-theme="dark"] .dina-float-icon i {
+  color: #e3d5ff !important;
+}
+
+/* INICIO: botón blanco Hablemos sobre fondo violeta. */
+html[data-theme="dark"] .dina-contact-band .dina-btn-light {
+  background: #ffffff !important;
+  color: #33275d !important;
+  border: 2px solid #ffffff !important;
+  text-shadow: none !important;
+  font-weight: 800;
+}
+
+html[data-theme="dark"] .dina-contact-band .dina-btn-light i,
+html[data-theme="dark"] .dina-contact-band .dina-btn-light svg {
+  color: #33275d !important;
+  fill: currentColor;
+}
+
+html[data-theme="dark"] .dina-contact-band .dina-btn-light:hover {
+  background: #ede7ff !important;
+  color: #281e50 !important;
+  border-color: #ede7ff !important;
+}
+
+html[data-theme="dark"] .dina-contact-band .dina-btn-light:hover i,
+html[data-theme="dark"] .dina-contact-band .dina-btn-light:hover svg {
+  color: #281e50 !important;
+}
+
+/* INICIO: etiquetas e indicaciones secundarias. */
+html[data-theme="dark"] .dina-hero-tags span {
+  color: #e4e0f5 !important;
+}
+
+html[data-theme="dark"] .dina-hero-tags i {
+  color: #c3b5ff !important;
+}
+
+html[data-theme="dark"] .dina-hero-description {
+  color: #e0e2ef !important;
+}
+
+html[data-theme="dark"] .dina-scroll-hint,
+html[data-theme="dark"] .dina-scroll-hint span {
+  color: #d8caff !important;
+}

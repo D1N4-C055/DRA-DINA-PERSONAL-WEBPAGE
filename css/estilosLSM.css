@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+html {
+	padding:0;
+	margin:0;
+}
+
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+
+body {
+	background:#F4F4F4;
+	padding-top:60px;
+}
+
+@media (max-width: 1078px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+
+/* :::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::: */
+.container header nav.navbar{
+	background:#023859;
+}
+
+.container header .navbar .nav li.dropdown ul.dropdown-menu{
+	background:#023859;
+}
+
+.container header .navbar .nav > li.dropdown.open.active > a:hover, 
+.container header .navbar .nav > li.dropdown.open > a
+{
+   color:#FFFFFF;
+   background-color:#E6344A;
+   border-color:#E6344A;
+}
+
+.container header .navbar .nav li:hover,.container header .navbar .nav li.dropdown:hover ,.container header .navbar .nav li.dropdown ul.dropdown-menu li a:hover{
+	background:#E6344A;
+}
+
+.container header .navbar .nav li:hover a,.container header .navbar .nav li.dropdown:hover a.dropdown-toggle{ 
+	color:#FFFFFF;
+}
+
+.container header .navbar .nav li.dropdown ul.dropdown-menu li a:hover ,.container header .navbar .nav li.dropdown ul.dropdown-menu li a:hover{ 
+	color:#FFFFFF;
+}
+
+.container header .navbar .nav li a ,.container header .navbar .nav .dropdown a{
+	color:#FFFFFF;
+	cursor:pointer;
+}
+
+.container header .navbar .container-fluid .navbar-header a.navbar-brand{
+	color:#FFFFFF;
+	font-size:20px;
+	/*text-decoration:underline;*/
+	cursor:default;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+/* :::::::::::::::::::::::::::::::::: SECTION :::::::::::::::::::::::::::::::::: */
+section article.titulo{
+	background:#E3E2E2;
+	max-width:1000px;
+	width:95%;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0px auto 10px;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    cursor:default;
+    font-family: 'Arimo', sans-serif;
+}
+
+section article.titulo h1{
+	margin:0 auto;
+	background:#f4f4f4;
+	font-size:30px;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-family: 'Merriweather', serif;
+	line-height:1.2;
+	color:#142B3B;
+}
+
+article.LSM {
+	background:#E3E2E2;
+	max-width:1000px;
+	width:95%;
+	margin:0px auto 10px;
+	padding-top:25px;
+	padding-bottom:25px;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    cursor:default;
+    font-family:'Arimo', sans-serif;
+    text-align:justify;
+    line-height:1.2;
+    color:#000000;
+}
+
+article.LSM hr.division {
+	max-width:1000px;
+	width:95%;
+	margin:0 auto;
+	border:solid #610;
+	border-width: 2px 0 0 0;
+}
+
+article.LSM p {
+	max-width:1000px;
+	width:95%;
+	margin:20px auto;
+	font-size:18px;
+	line-height:1.2;
+    color:#000000;
+}
+
+article.LSM li {
+	max-width:1000px;
+	width:85%;
+	margin:0 auto;
+	font-size:18px;
+	margin:0 auto;
+}
+
+article.LSM p.pad-top {
+	max-width:1000px;
+	width:95%;
+	margin:0 auto;
+	padding-top:10px; 
+	font-size:18px;
+}
+
+article.LSM li.pad-buttom {
+	max-width:1000px;
+	width:85%;
+	margin:0 auto;
+	padding-bottom:10px;
+	font-size:18px;
+}
+
+article.acceso_rapido .row {
+	margin:0 auto;
+	text-align:center;
+}
+
+article.acceso_rapido {
+	background:#E3E2E2;
+	max-width:1000px;
+	width:95%;
+	margin:0px auto 10px;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+article.acceso_rapido a {
+	font-family: 'Arimo', sans-serif;
+	margin:0 auto;
+	font-size:25px;
+	color:#333333;
+	text-decoration:none;
+}
+
+article.acceso_rapido a:hover {
+	max-width:1000px;
+	width:95%;
+	margin:0 auto;
+	font-family: 'Arimo', sans-serif;
+	font-size:25px;
+	color:#B92326;
+	text-decoration:none;
+}
+
+article.video_noe {
+	background:#E3E2E2;
+	max-width:1000px;
+	width:95%;
+	margin:0 auto 10px;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    cursor:default;
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    text-align:left;
+    line-height:1.2;
+    color:#000000;
+}
+
+article.video_noe video {
+	display:block;
+	margin: 10px auto;
+	width:95%;
+	padding-bottom:10px;
+}
+
+article.video_noe h2, article.video_oscar h2 {
+	font-family: 'Merriweather', serif;
+	font-size:22px;
+	max-width:1000px;
+	width:95%;
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:10px;
+}
+
+article.video_noe p {
+	font-size:18px;
+	max-width:1000px;
+	width:95%;
+	margin:0 auto;
+	text-align:justify;
+}
+
+article.video_oscar {
+	background:#E3E2E2;
+	max-width:1000px;
+	width:95%;
+	margin:0px auto 10px;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    cursor:default;
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    text-align:left;
+}
+
+article.video_oscar video {
+	display:block;
+	margin: 10px auto;
+	width:95%;
+	padding-bottom:10px;
+}
+
+/* :::::::::::::::::::::::::::::::::: FOOTER ::::::::::::::::::::::::::::::::::: */
+footer {
+	background:#023859; 
+	width:100%;
+	z-index:1000;
+	margin:0 auto;
+}
+
+.Foot1 .row{
+	max-width:800px;
+	margin:0 auto;
+}
+
+.Foot1 .row p{
+	padding-left: 50px;
+	margin: 0 auto;
+}
+
+footer div.Foot1 {
+	color:#FFFFFF;
+	font-family:'Arimo', sans-serif;
+	font-size:15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0 auto;
+}
+
+footer div.Foot1 a {
+	color:#FFFFFF;
+	font-family: 'Arimo', sans-serif;
+	font-size:15px;
+	margin:0 auto;
+	text-decoration:underline;
+	padding-left: 50px;
+}
